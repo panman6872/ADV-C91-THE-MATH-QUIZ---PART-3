@@ -15,34 +15,27 @@
 </head>
 
 <body>
-    <h3 id="player_1_label" style="margin-left: 10px;"><span id="player_1_score_lbl"></span></h3>
-    <br>
-    <h3 id="player_2_label"></h3><span id="player_2_score_lbl"></span>
-
-    <center>
-        <div class="container" style="width: 60%;">
-            <center>
-                <h2 style="color: white;">The Math Quiz Game!</h2>
-                <h3 id="player_question"></h3>
-                <h3 id="player_answer"></h3>
-                <div id="output" class="col-lg-6">
-            </center>
-        </div>
-        <div>
-            <center>
-                <h3>Number 1</h3>
-                <br>
-                <input type="number" id="number1" class="form-control" placeholder="Number 1" style="width: 60%;">
-                <br>
-                <h3>Number 2</h3>
-                <br>
-                <input type="number" id="number2" class="form-control" placeholder="Number 2" style="width: 60%;">
-                <br>
-                <br>
-                <button onclick="Send()" class="btn btn-primary" style="width: 30%;">Send</button>
-            </center>
-        </div>
-    </center>
+	<h4 id="player1_name"></h4> <span id="player1_score"></span>
+	<br>
+	<h4 id="player2_name"></h4> <span id="player2_score"></span>
+	<div class="container">
+<div class="container">
+	<center>
+		<h2 style="font-family: 'Yellowtail', cursive; font-size: 100px;">The math quiz</h2>
+		<h3 id="player_question" style="font-family: none; color: black;"></h3>
+		<h3 id="player_answer" style="font-family: none; color: black;"></h3>
+		<br>
+		<br>
+		<div id="output" class="col-lg-6"></div>
+		<br>
+		<h4>Number 1</h4>
+		<input type="number" class="form-control" id="number_1" placeholder="Number 1" style="width: 30%;">
+		<h4>Number 2</h4>
+		<input type="number" class="form-control" id="number_2" placeholder="Number 2" style="width: 30%;">
+		<br>
+		<button onclick="send()"class="btn btn-success">Send</button>
+	</center>
+</div>
 </body>
 
 </html>
